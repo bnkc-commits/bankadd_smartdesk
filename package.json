@@ -1,0 +1,11 @@
+{
+  "name": "mon-projet",
+  "version": "1.0.0",
+  "description": "Un petit projet Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "TonNom",
+  "license": "MIT"
+}
