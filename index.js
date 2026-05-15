@@ -8,4 +8,8 @@ app.get("/", (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+}); 
+
+app.get('/apporteur-app', (req, res) => {
+  res.send('Hello from Apporteur App');
 });
