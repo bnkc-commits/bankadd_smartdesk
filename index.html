@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Agent Interne Assurance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Agent Interne Assurance</h1>
+
+  <input id="username" placeholder="Nom utilisateur">
+
+  <button onclick="loginAgent()">
+    Connexion Offline
+  </button>
+
+  <hr>
+
+  <div id="messages"></div>
+
+</div>
+
+<script src="../shared/indexeddb.js"></script>
+<script src="../shared/crypto.js"></script>
+<script src="../shared/ppf-manager.js"></script>
+<script src="../shared/xml-loader.js"></script>
+<script src="auth.js"></script>
+<script src="rtc.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
