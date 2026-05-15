@@ -1,0 +1,7 @@
+
+{
+  "name": "Apporteur Assurance",
+  "short_name": "Apporteur",
+  "start_url": "./index.html",
+  "display": "standalone"
+}
