@@ -1,0 +1,6 @@
+{
+  "name": "Agent Assurance",
+  "short_name": "Agent",
+  "start_url": "./index.html",
+  "display": "standalone"
+}
