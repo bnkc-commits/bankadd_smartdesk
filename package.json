@@ -1,11 +1,14 @@
 {
-  "name": "mon-projet",
+  "name": "bankadd_smartdesk",
   "version": "1.0.0",
-  "description": "Un petit projet Node.js",
+  "description": "Application Node.js déployée sur Render",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "TonNom",
-  "license": "MIT"
+  "author": "Badou Narcisse",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
