@@ -1,13 +1,12 @@
 const WebSocket = require('ws')
 
-const wss = new WebSocket.Server({ port: 8080 })
+const PORT = process.env.PORT || 8080
+const wss = new WebSocket.Server({ port: PORT })
 
 const clients = {}
 
 wss.on('connection', (ws) => {
-
   ws.on('message', (message) => {
-
     const data = JSON.parse(message)
 
     if (data.type === 'register') {
@@ -30,4 +29,4 @@ wss.on('connection', (ws) => {
   })
 })
 
-console.log('Signal server started on port 8080') 
+console.log(`Signal server started on port ${PORT}`)
