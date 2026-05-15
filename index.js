@@ -1,28 +1,29 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-require("dotenv").config();
+const port = process.env.PORT || 3000;
 
-const PORT = process.env.PORT || 3000;
-
-// Middleware
-app.use(express.json());
-
-// Routes
-app.get("/", (req, res) => {
-  res.send("Hello from bankadd_smartdesk!");
+// Route pour Apporteur App
+app.get('/apporteur-app', (req, res) => {
+  res.send(`
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Apporteur App</title>
+        <style>
+          body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+          h1 { color: #2c3e50; }
+          p { color: #34495e; }
+        </style>
+      </head>
+      <body>
+        <h1>Hello from Apporteur App</h1>
+        <p>Bienvenue sur votre application déployée avec Render !</p>
+      </body>
+    </html>
+  `);
 });
 
-app.get("/apporteur-app", (req, res) => {
-  res.send("Hello from Apporteur App");
-});
-
-// Gestion des erreurs
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Something broke!");
-});
-
-// Lancement du serveur
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+// Démarrer le serveur
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
